@@ -1,0 +1,464 @@
+{
+  "site": {
+    "name": {
+      "ru": "SigmatNG",
+      "en": "SigmatNG"
+    },
+    "fullName": {
+      "ru": "Система автоматизированной высокочастотной торговли «SigmatNG»",
+      "en": "SigmatNG automated high-frequency trading system"
+    },
+    "description": {
+      "ru": "Платформа для автоматизации алгоритмической торговли на финансовых рынках Российской Федерации: приём рыночных данных, исполнение стратегий, управление заявками и контроль рисков.",
+      "en": "A platform for automating algorithmic trading on the financial markets of the Russian Federation: market data intake, strategy execution, order management and risk controls."
+    },
+    "seoTitle": {
+      "ru": "SigmatNG — инфраструктура алгоритмической торговли",
+      "en": "SigmatNG — algorithmic trading infrastructure"
+    },
+    "seoDescription": {
+      "ru": "Технологическая платформа для алгоритмической и высокочастотной торговли: рыночные данные, заявки, стратегии и риск-контроль.",
+      "en": "A technology platform for algorithmic and high-frequency trading: market data, orders, strategies and risk control."
+    }
+  },
+  "navigation": {
+    "advantages": {
+      "ru": "Преимущества",
+      "en": "Advantages"
+    },
+    "about": {
+      "ru": "О компании",
+      "en": "About"
+    },
+    "products": {
+      "ru": "Продукты",
+      "en": "Products"
+    },
+    "documentation": {
+      "ru": "Документация",
+      "en": "Documentation"
+    },
+    "contacts": {
+      "ru": "Контакты",
+      "en": "Contacts"
+    },
+    "cta": {
+      "ru": "Связаться с нами",
+      "en": "Contact us"
+    }
+  },
+  "hero": {
+    "visible": true,
+    "eyebrow": {
+      "ru": "Торговая инфраструктура",
+      "en": "Trading infrastructure"
+    },
+    "title": {
+      "ru": "Инфраструктура для алгоритмической торговли с минимальной задержкой",
+      "en": "Low-latency infrastructure for algorithmic trading"
+    },
+    "description": {
+      "ru": "SigmatNG предназначена для автоматизации операций алгоритмической торговли: приём и обработка рыночных данных в реальном времени, выполнение торговых стратегий, управление заявками и предторговый контроль рисков.",
+      "en": "SigmatNG is designed to automate algorithmic trading operations: real-time market data processing, strategy execution, order management and pre-trade risk control."
+    },
+    "primaryCta": {
+      "ru": "Смотреть продукты",
+      "en": "View products"
+    },
+    "secondaryCta": {
+      "ru": "Документация",
+      "en": "Documentation"
+    }
+  },
+  "advantages": {
+    "visible": true,
+    "title": {
+      "ru": "Преимущества платформы 1",
+      "en": "Platform advantages"
+    },
+    "description": {
+      "ru": "***** Сфокусированный набор возможностей для профессиональных участников рынка, которым нужна управляемая и наблюдаемая торговая инфраструктура.",
+      "en": "A focused set of capabilities for professional market participants who need controlled and observable trading infrastructure."
+    },
+    "items": [
+      {
+        "id": "market-data",
+        "title": {
+          "ru": "Рыночные данные в реальном времени",
+          "en": "Real-time market data"
+        },
+        "description": {
+          "ru": "Приём и обработка рыночных данных для последующего использования торговыми стратегиями и системами контроля.",
+          "en": "Ingest and process market data for trading strategies and control systems."
+        },
+        "icon": "activity",
+        "visible": true,
+        "order": 1
+      },
+      {
+        "id": "low-latency",
+        "title": {
+          "ru": "Низкая задержка обработки",
+          "en": "Low processing latency"
+        },
+        "description": {
+          "ru": "Архитектура ориентирована на сокращение задержки на пути от рыночного события до решения по заявке.",
+          "en": "The architecture is oriented toward reducing latency from a market event to an order decision."
+        },
+        "icon": "timer",
+        "visible": true,
+        "order": 2
+      },
+      {
+        "id": "strategies",
+        "title": {
+          "ru": "Управление торговыми стратегиями",
+          "en": "Trading strategy management"
+        },
+        "description": {
+          "ru": "Среда для размещения, запуска и сопровождения алгоритмических стратегий в контролируемом контуре.",
+          "en": "An environment for deploying, running and operating algorithmic strategies in a controlled perimeter."
+        },
+        "icon": "layers",
+        "visible": true,
+        "order": 3
+      },
+      {
+        "id": "risk",
+        "title": {
+          "ru": "Предторговый и постторговый риск-контроль",
+          "en": "Pre-trade and post-trade risk control"
+        },
+        "description": {
+          "ru": "Проверки лимитов и ограничений до выставления заявок и анализ результатов после исполнения.",
+          "en": "Limit checks before order submission and analysis of results after execution."
+        },
+        "icon": "shield",
+        "visible": true,
+        "order": 4
+      },
+      {
+        "id": "journal",
+        "title": {
+          "ru": "Журналирование операций",
+          "en": "Operations journaling"
+        },
+        "description": {
+          "ru": "Фиксация ключевых событий платформы для последующего разбора, аудита и технической диагностики.",
+          "en": "Recording of key platform events for later review, audit and technical diagnostics."
+        },
+        "icon": "scroll",
+        "visible": true,
+        "order": 5
+      },
+      {
+        "id": "integration",
+        "title": {
+          "ru": "Интеграционный подход",
+          "en": "Integration-oriented design"
+        },
+        "description": {
+          "ru": "Платформа рассчитана на встраивание в существующую торговую инфраструктуру, включая направления интеграции с MOEX и SPBX.",
+          "en": "The platform is designed to fit into existing trading infrastructure, including MOEX and SPBX integration directions."
+        },
+        "icon": "network",
+        "visible": true,
+        "order": 6
+      }
+    ]
+  },
+  "about": {
+    "title": {
+      "ru": "О платформе",
+      "en": "About the platform"
+    },
+    "paragraphs": [
+      {
+        "ru": "SigmatNG — система автоматизированной высокочастотной торговли. Продукт российского происхождения, предназначенный для автоматизации алгоритмической торговли на финансовых рынках Российской Федерации.",
+        "en": "SigmatNG is an automated high-frequency trading system. It is a product of Russian origin designed to automate algorithmic trading on the financial markets of the Russian Federation."
+      },
+      {
+        "ru": "Платформа обеспечивает приём и обработку рыночных данных, выполнение торговых стратегий, управление заявками и предторговый контроль рисков. Она ориентирована на технологические и торговые команды профессиональных участников рынка.",
+        "en": "The platform provides market data intake and processing, strategy execution, order management and pre-trade risk control. It is intended for technology and trading teams of professional market participants."
+      },
+      {
+        "ru": "Область применения включает алгоритмическую и высокочастотную торговлю, анализ рыночных данных, управление стратегиями и контроль торговых рисков. Упоминание MOEX и SPBX относится к поддерживаемым направлениям интеграции и не означает наличие действующего партнёрства, сертификации или договора, пока такие сведения не подтверждены отдельно.",
+        "en": "The scope of use includes algorithmic and high-frequency trading, market data analysis, strategy management and trading risk control. References to MOEX and SPBX describe supported integration directions and do not imply an active partnership, certification or contract unless confirmed separately."
+      }
+    ],
+    "audienceTitle": {
+      "ru": "Для кого",
+      "en": "Intended for"
+    },
+    "audienceItems": [
+      {
+        "ru": "Профессиональные участники финансового рынка",
+        "en": "Professional financial market participants"
+      },
+      {
+        "ru": "Команды алгоритмической и высокочастотной торговли",
+        "en": "Algorithmic and high-frequency trading teams"
+      },
+      {
+        "ru": "Подразделения риск-контроля и сопровождения торговых систем",
+        "en": "Risk control and trading system operations teams"
+      }
+    ],
+    "visible": true
+  },
+  "products": {
+    "visible": true,
+    "title": {
+      "ru": "Продукты и модули",
+      "en": "Products and modules"
+    },
+    "description": {
+      "ru": "Состав поставки и условия внедрения уточняются для конкретной инфраструктуры заказчика. Цена предоставляется по запросу.",
+      "en": "Delivery scope and implementation terms are clarified for each customer environment. Pricing is available on request."
+    },
+    "items": [
+      {
+        "id": "connectivity",
+        "title": {
+          "ru": "Подключение к площадкам и market data",
+          "en": "Venue connectivity and market data"
+        },
+        "description": {
+          "ru": "Модуль приёма рыночных данных и интеграции с торговыми площадками, включая направления MOEX и SPBX.",
+          "en": "A module for market data intake and venue connectivity, including MOEX and SPBX integration directions."
+        },
+        "features": [
+          {
+            "ru": "Приём рыночных данных",
+            "en": "Market data intake"
+          },
+          {
+            "ru": "Нормализация потока событий",
+            "en": "Event stream normalization"
+          },
+          {
+            "ru": "Подготовка к интеграции с контуром заказчика",
+            "en": "Prepared for customer environment integration"
+          }
+        ],
+        "priceLabel": {
+          "ru": "Цена предоставляется по запросу",
+          "en": "Price available on request"
+        },
+        "ctaLabel": {
+          "ru": "Уточнить условия поставки",
+          "en": "Request delivery terms"
+        },
+        "visible": true,
+        "order": 1
+      },
+      {
+        "id": "execution",
+        "title": {
+          "ru": "Управление заявками и исполнение",
+          "en": "Order management and execution"
+        },
+        "description": {
+          "ru": "Контур работы с заявками: формирование, отправка, сопровождение статусов и обработка ответов торговой системы.",
+          "en": "An order-handling contour: construction, submission, status tracking and processing of trading system responses."
+        },
+        "features": [
+          {
+            "ru": "Жизненный цикл заявки",
+            "en": "Order lifecycle handling"
+          },
+          {
+            "ru": "Сопровождение статусов",
+            "en": "Status tracking"
+          },
+          {
+            "ru": "Связка со стратегиями и контролем рисков",
+            "en": "Linkage to strategies and risk controls"
+          }
+        ],
+        "priceLabel": {
+          "ru": "Цена предоставляется по запросу",
+          "en": "Price available on request"
+        },
+        "ctaLabel": {
+          "ru": "Получить коммерческое предложение",
+          "en": "Request a commercial proposal"
+        },
+        "visible": true,
+        "order": 2
+      },
+      {
+        "id": "algo-runtime",
+        "title": {
+          "ru": "Среда алгоритмических стратегий",
+          "en": "Algorithmic strategy runtime"
+        },
+        "description": {
+          "ru": "Среда выполнения торговых алгоритмов с управлением жизненным циклом стратегий и доступом к рыночному контексту.",
+          "en": "A runtime for trading algorithms with strategy lifecycle management and access to market context."
+        },
+        "features": [
+          {
+            "ru": "Запуск и останов стратегий",
+            "en": "Start and stop strategies"
+          },
+          {
+            "ru": "Изоляция исполнения",
+            "en": "Execution isolation"
+          },
+          {
+            "ru": "Наблюдаемость работы алгоритмов",
+            "en": "Observability of algorithm operation"
+          }
+        ],
+        "priceLabel": {
+          "ru": "Цена предоставляется по запросу",
+          "en": "Price available on request"
+        },
+        "ctaLabel": {
+          "ru": "Обсудить внедрение",
+          "en": "Discuss implementation"
+        },
+        "visible": true,
+        "order": 3
+      },
+      {
+        "id": "risk-module",
+        "title": {
+          "ru": "Управление торговыми рисками",
+          "en": "Trading risk management"
+        },
+        "description": {
+          "ru": "Предторговые проверки и постторговый контроль ограничений в соответствии с политикой заказчика.",
+          "en": "Pre-trade checks and post-trade control of limits according to the customer policy."
+        },
+        "features": [
+          {
+            "ru": "Предторговые проверки",
+            "en": "Pre-trade checks"
+          },
+          {
+            "ru": "Лимиты и ограничения",
+            "en": "Limits and constraints"
+          },
+          {
+            "ru": "Постторговый разбор",
+            "en": "Post-trade review"
+          }
+        ],
+        "priceLabel": {
+          "ru": "Цена предоставляется по запросу",
+          "en": "Price available on request"
+        },
+        "ctaLabel": {
+          "ru": "Связаться по рискам",
+          "en": "Contact us about risk controls"
+        },
+        "visible": true,
+        "order": 4
+      },
+      {
+        "id": "monitoring",
+        "title": {
+          "ru": "Мониторинг, журналирование и уведомления",
+          "en": "Monitoring, journaling and notifications"
+        },
+        "description": {
+          "ru": "Наблюдение за состоянием компонентов, журнал операций и доставка служебных уведомлений операционной команде.",
+          "en": "Component health observation, an operations journal and delivery of operational notifications."
+        },
+        "features": [
+          {
+            "ru": "Журнал ключевых событий",
+            "en": "Key event journal"
+          },
+          {
+            "ru": "Мониторинг состояния",
+            "en": "Health monitoring"
+          },
+          {
+            "ru": "Уведомления для сопровождения",
+            "en": "Operations notifications"
+          }
+        ],
+        "priceLabel": {
+          "ru": "Цена предоставляется по запросу",
+          "en": "Price available on request"
+        },
+        "ctaLabel": {
+          "ru": "Получить предложение",
+          "en": "Get a proposal"
+        },
+        "visible": true,
+        "order": 5
+      }
+    ]
+  },
+  "documentation": {
+    "title": {
+      "ru": "Документация",
+      "en": "Documentation"
+    },
+    "description": {
+      "ru": "Документы для ознакомления с платформой публикуются администратором. Ниже — официальный ресурс реестра российского ПО; включение конкретного продукта в реестр не утверждается, пока не будет указана карточка ПО.",
+      "en": "Documents describing the platform are published by an administrator. The official Russian software registry is linked below; inclusion of this product in the registry is not claimed unless a software card URL is provided."
+    },
+    "registryTitle": {
+      "ru": "Документация для включения в Единый реестр российского ПО",
+      "en": "Documentation related to the Unified Register of Russian Software"
+    },
+    "registryDescription": {
+      "ru": "Ссылка ведёт на официальный ресурс Минцифры. Это не подтверждение того, что SigmatNG уже внесена в реестр.",
+      "en": "The link leads to the official Ministry of Digital Development resource. It is not confirmation that SigmatNG is already listed."
+    },
+    "registryLinkLabel": {
+      "ru": "Единый реестр российского ПО",
+      "en": "Unified Register of Russian Software"
+    },
+    "registryLinkUrl": "https://reestr.digital.gov.ru/",
+    "softwareCardLabel": {
+      "ru": "Карточка программного обеспечения",
+      "en": "Software registry card"
+    },
+    "softwareCardUrl": "",
+    "documents": [],
+    "visible": true
+  },
+  "contacts": {
+    "title": {
+      "ru": "Контакты",
+      "en": "Contacts"
+    },
+    "description": {
+      "ru": "Реквизиты ниже — шаблонные значения. Замените их в административной панели на актуальные данные организации.",
+      "en": "The details below are placeholders. Replace them in the admin panel with the organisation’s actual data."
+    },
+    "companyName": "[Название организации]",
+    "legalAddress": "[Юридический адрес — указать]",
+    "actualAddress": "[Фактический адрес — указать]",
+    "email": "info@example.com",
+    "phone": "+7 (000) 000-00-00",
+    "workingHours": {
+      "ru": "Часы работы: [указать]",
+      "en": "Working hours: [to be specified]"
+    },
+    "mapUrl": "",
+    "telegramUrl": "",
+    "visible": true
+  },
+  "footer": {
+    "tagline": {
+      "ru": "Инфраструктура алгоритмической торговли",
+      "en": "Algorithmic trading infrastructure"
+    },
+    "copyright": {
+      "ru": "© SigmatNG. Все права защищены.",
+      "en": "© SigmatNG. All rights reserved."
+    },
+    "privacyPolicyLabel": {
+      "ru": "Политика конфиденциальности",
+      "en": "Privacy policy"
+    },
+    "privacyPolicyUrl": ""
+  }
+}
