@@ -73,11 +73,11 @@
   "advantages": {
     "visible": true,
     "title": {
-      "ru": "Преимущества платформы 1",
+      "ru": "Преимущества платформы",
       "en": "Platform advantages"
     },
     "description": {
-      "ru": "***** Сфокусированный набор возможностей для профессиональных участников рынка, которым нужна управляемая и наблюдаемая торговая инфраструктура.",
+      "ru": "Сфокусированный набор возможностей для профессиональных участников рынка, которым нужна управляемая и наблюдаемая торговая инфраструктура.",
       "en": "A focused set of capabilities for professional market participants who need controlled and observable trading infrastructure."
     },
     "items": [
