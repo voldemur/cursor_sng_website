@@ -54,8 +54,8 @@
       "en": "Trading infrastructure"
     },
     "title": {
-      "ru": "Инфраструктура для алгоритмической торговли с минимальной задержкой",
-      "en": "Low-latency infrastructure for algorithmic trading"
+      "ru": "Инфраструктура для алгоритмической торговли с минимальной задержкой 2",
+      "en": "Low-latency infrastructure for algorithmic trading 2"
     },
     "description": {
       "ru": "SigmatNG предназначена для автоматизации операций алгоритмической торговли: приём и обработка рыночных данных в реальном времени, выполнение торговых стратегий, управление заявками и предторговый контроль рисков.",
@@ -433,9 +433,26 @@
       "ru": "Реквизиты ниже — шаблонные значения. Замените их в административной панели на актуальные данные организации.",
       "en": "The details below are placeholders. Replace them in the admin panel with the organisation’s actual data."
     },
-    "companyName": "[Название организации]",
-    "legalAddress": "[Юридический адрес — указать]",
-    "actualAddress": "[Фактический адрес — указать]",
+    "companyName": {
+      "ru": "[Название организации]",
+      "en": "[Company name]"
+    },
+    "legalAddress": {
+      "ru": "[Юридический адрес — указать] 2",
+      "en": "[Legal address — to be specified] 2"
+    },
+    "legalAddressLabel": {
+      "ru": "Юридический адрес",
+      "en": "Legal address"
+    },
+    "actualAddress": {
+      "ru": "[Фактический адрес — указать]",
+      "en": "[Actual address — to be specified]"
+    },
+    "actualAddressLabel": {
+      "ru": "Фактический адрес",
+      "en": "Actual address"
+    },
     "email": "info@example.com",
     "phone": "+7 (000) 000-00-00",
     "workingHours": {

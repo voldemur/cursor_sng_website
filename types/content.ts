@@ -97,9 +97,11 @@ export type SiteContent = {
   contacts: {
     title: LocalizedText;
     description: LocalizedText;
-    companyName: string;
-    legalAddress: string;
-    actualAddress: string;
+    companyName: LocalizedText;
+    legalAddress: LocalizedText;
+    legalAddressLabel: LocalizedText;
+    actualAddress: LocalizedText;
+    actualAddressLabel: LocalizedText;
     email: string;
     phone: string;
     workingHours: LocalizedText;

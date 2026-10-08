@@ -1,10 +1,28 @@
 import { z } from "zod";
 import { sanitizeHttpUrl } from "@/lib/validation/urls";
+import type { LocalizedText } from "@/types/content";
 
 export const localizedTextSchema = z.object({
   ru: z.string(),
   en: z.string(),
 });
+
+/**
+ * Accepts the current `{ ru, en }` shape and also the legacy plain-string shape
+ * used before contact details became bilingual. Legacy values are kept as the
+ * Russian variant so existing installations keep working after the upgrade.
+ */
+export const localizedTextOrLegacySchema = z
+  .unknown()
+  .transform((value, ctx): LocalizedText => {
+    if (typeof value === "string") return { ru: value, en: "" };
+    const parsed = localizedTextSchema.safeParse(value);
+    if (!parsed.success) {
+      ctx.addIssue({ code: "custom", message: "Expected localized text or a plain string" });
+      return { ru: "", en: "" };
+    }
+    return parsed.data;
+  });
 
 const httpUrlOrEmpty = z.string().transform((value) => {
   const trimmed = value.trim();
@@ -118,9 +136,11 @@ export const siteContentSchema = z.object({
   contacts: z.object({
     title: localizedTextSchema,
     description: localizedTextSchema,
-    companyName: z.string().max(300),
-    legalAddress: z.string().max(500),
-    actualAddress: z.string().max(500),
+    companyName: localizedTextOrLegacySchema,
+    legalAddress: localizedTextOrLegacySchema,
+    legalAddressLabel: localizedTextSchema.default({ ru: "Юридический адрес", en: "Legal address" }),
+    actualAddress: localizedTextOrLegacySchema,
+    actualAddressLabel: localizedTextSchema.default({ ru: "Фактический адрес", en: "Actual address" }),
     email: z.string().max(200),
     phone: z.string().max(80),
     workingHours: localizedTextSchema,

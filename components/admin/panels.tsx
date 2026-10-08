@@ -1,5 +1,5 @@
 import { ICON_OPTIONS } from "@/components/landing/AdvantageIcon";
-import { Card, LocalizedPair, TextAreaField, TextField, Toggle } from "@/components/admin/fields";
+import { Card, LocalizedPair, TextField, Toggle } from "@/components/admin/fields";
 import { emptyText } from "@/lib/content/empty";
 import { moveItem } from "@/lib/admin/reorder";
 import type { ContentDocument, SiteContent } from "@/types/content";
@@ -370,9 +370,14 @@ export function ContactsPanel({ content, onChange }: EditorProps) {
     <Card title="Контакты" actions={<Toggle label="Показывать блок" checked={content.contacts.visible} onChange={(visible) => onChange({ ...content, contacts: { ...content.contacts, visible } })} />}>
       <LocalizedPair label="Заголовок" value={content.contacts.title} onChange={(title) => onChange({ ...content, contacts: { ...content.contacts, title } })} />
       <LocalizedPair label="Описание" value={content.contacts.description} multiline onChange={(description) => onChange({ ...content, contacts: { ...content.contacts, description } })} />
-      <TextField label="Название организации" value={content.contacts.companyName} onChange={(companyName) => onChange({ ...content, contacts: { ...content.contacts, companyName } })} />
-      <TextAreaField label="Юридический адрес" value={content.contacts.legalAddress} onChange={(legalAddress) => onChange({ ...content, contacts: { ...content.contacts, legalAddress } })} />
-      <TextAreaField label="Фактический адрес" value={content.contacts.actualAddress} onChange={(actualAddress) => onChange({ ...content, contacts: { ...content.contacts, actualAddress } })} />
+      <LocalizedPair label="Название организации" value={content.contacts.companyName} onChange={(companyName) => onChange({ ...content, contacts: { ...content.contacts, companyName } })} />
+      <LocalizedPair label="Подпись «Юридический адрес»" value={content.contacts.legalAddressLabel} onChange={(legalAddressLabel) => onChange({ ...content, contacts: { ...content.contacts, legalAddressLabel } })} />
+      <LocalizedPair label="Юридический адрес" value={content.contacts.legalAddress} multiline onChange={(legalAddress) => onChange({ ...content, contacts: { ...content.contacts, legalAddress } })} />
+      <LocalizedPair label="Подпись «Фактический адрес»" value={content.contacts.actualAddressLabel} onChange={(actualAddressLabel) => onChange({ ...content, contacts: { ...content.contacts, actualAddressLabel } })} />
+      <LocalizedPair label="Фактический адрес" value={content.contacts.actualAddress} multiline onChange={(actualAddress) => onChange({ ...content, contacts: { ...content.contacts, actualAddress } })} />
+      <p className="text-xs text-platinum">
+        Для английской версии заполните поля EN. Если поле EN пустое, на английской странице показывается русский текст.
+      </p>
       <TextField label="Email" value={content.contacts.email} onChange={(email) => onChange({ ...content, contacts: { ...content.contacts, email } })} />
       <TextField label="Телефон" value={content.contacts.phone} onChange={(phone) => onChange({ ...content, contacts: { ...content.contacts, phone } })} />
       <LocalizedPair label="Часы работы" value={content.contacts.workingHours} onChange={(workingHours) => onChange({ ...content, contacts: { ...content.contacts, workingHours } })} />

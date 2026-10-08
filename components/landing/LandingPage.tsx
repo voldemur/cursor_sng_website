@@ -218,17 +218,17 @@ export function LandingPage({ locale, content }: { locale: Locale; content: Site
           </FadeIn>
           <div className="card mt-10 grid gap-8 p-6 md:grid-cols-2">
             <div className="space-y-4 text-sm">
-              <p className="text-lg text-white">{content.contacts.companyName}</p>
+              <p className="text-lg text-white">{t(content.contacts.companyName, locale)}</p>
               <p className="flex gap-2 text-mist">
                 <MapPin size={16} className="mt-0.5 shrink-0" aria-hidden="true" />
                 <span>
-                  {locale === "ru" ? "Юридический адрес" : "Legal address"}: {content.contacts.legalAddress}
+                  {t(content.contacts.legalAddressLabel, locale)}: {t(content.contacts.legalAddress, locale)}
                 </span>
               </p>
               <p className="flex gap-2 text-mist">
                 <MapPin size={16} className="mt-0.5 shrink-0" aria-hidden="true" />
                 <span>
-                  {locale === "ru" ? "Фактический адрес" : "Actual address"}: {content.contacts.actualAddress}
+                  {t(content.contacts.actualAddressLabel, locale)}: {t(content.contacts.actualAddress, locale)}
                 </span>
               </p>
               <p className="text-mist">{t(content.contacts.workingHours, locale)}</p>

@@ -108,7 +108,7 @@ export function SiteFooter({ locale, content }: { locale: Locale; content: SiteC
             {t(content.navigation.contacts, locale)}
           </p>
           <div className="mt-3 flex flex-col gap-2 text-sm text-mist">
-            <span>{content.contacts.companyName}</span>
+            <span>{t(content.contacts.companyName, locale)}</span>
             {mail ? (
               <a className="hover:text-white" href={mail}>
                 {content.contacts.email}

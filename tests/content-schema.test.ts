@@ -50,4 +50,32 @@ describe("site content schema", () => {
     ];
     expect(siteContentSchema.safeParse(payload).success).toBe(false);
   });
+
+  it("keeps bilingual company details in the shipped content", () => {
+    const { contacts } = siteContentSchema.parse(fixture);
+    for (const field of ["companyName", "legalAddress", "actualAddress"] as const) {
+      expect(typeof contacts[field].ru).toBe("string");
+      expect(typeof contacts[field].en).toBe("string");
+      expect(contacts[field].ru.length).toBeGreaterThan(0);
+      expect(contacts[field].en.length).toBeGreaterThan(0);
+    }
+  });
+
+  it("migrates legacy plain-string company details to the Russian variant", () => {
+    const payload = structuredClone(fixture);
+    payload.contacts.companyName = "ООО «Пример»";
+    payload.contacts.legalAddress = "Москва, ул. Примерная, д. 1";
+    payload.contacts.actualAddress = "Москва, ул. Примерная, д. 1";
+    delete payload.contacts.legalAddressLabel;
+    delete payload.contacts.actualAddressLabel;
+
+    const parsed = siteContentSchema.safeParse(payload);
+    expect(parsed.success).toBe(true);
+    if (!parsed.success) return;
+    expect(parsed.data.contacts.companyName).toEqual({ ru: "ООО «Пример»", en: "" });
+    expect(parsed.data.contacts.legalAddress).toEqual({ ru: "Москва, ул. Примерная, д. 1", en: "" });
+    expect(parsed.data.contacts.actualAddress).toEqual({ ru: "Москва, ул. Примерная, д. 1", en: "" });
+    expect(parsed.data.contacts.legalAddressLabel).toEqual({ ru: "Юридический адрес", en: "Legal address" });
+    expect(parsed.data.contacts.actualAddressLabel).toEqual({ ru: "Фактический адрес", en: "Actual address" });
+  });
 });
