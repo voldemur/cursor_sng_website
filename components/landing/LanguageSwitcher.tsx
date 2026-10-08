@@ -18,6 +18,11 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
           <Link
             key={item}
             href={href}
+            // Both locales render the same page, so the visitor must keep their
+            // place. Without this, Next.js scrolls to the top of the page when
+            // the viewport sits past the top of the new route's content (which
+            // is always the case for the switcher in the footer).
+            scroll={false}
             hrefLang={item}
             lang={item}
             className={`rounded-full px-2.5 py-1 uppercase tracking-wide transition ${
