@@ -33,7 +33,7 @@ export function sessionCookieOptions() {
   return {
     httpOnly: true,
     sameSite: "lax" as const,
-    secure: isProduction(),
+    secure: isProduction() && process.env.COOKIE_SECURE !== "false",
     path: "/",
     maxAge: SESSION_TTL_SECONDS,
   };
@@ -43,7 +43,7 @@ export function csrfCookieOptions() {
   return {
     httpOnly: false,
     sameSite: "lax" as const,
-    secure: isProduction(),
+    secure: isProduction() && process.env.COOKIE_SECURE !== "false",
     path: "/",
     maxAge: SESSION_TTL_SECONDS,
   };

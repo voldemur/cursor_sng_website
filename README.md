@@ -144,6 +144,11 @@ node -e "const {loadEnvConfig}=require('@next/env');loadEnvConfig(process.cwd(),
 
 `next start` не умеет HTTPS (флаг `--experimental-https` есть только у `next dev`), поэтому TLS всегда терминируется на прокси. Запускать Next напрямую на порту 80 бессмысленно и небезопасно: по HTTP браузер не сохранит cookie сессии с флагом `Secure` (`lib/auth/session.ts`), и после успешного входа панель будет возвращать на `/admin/login`.
 
+Запуск на 80 порту в продакшен
+```
+nohup env PORT=80 COOKIE_SECURE=false npm run start > app.log 2>&1 &
+```
+
 ### 1. Переменные окружения
 
 Заполните `.env.local` на сервере (файл не коммитится):
