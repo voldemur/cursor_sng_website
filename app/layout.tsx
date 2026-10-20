@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import { headers } from "next/headers";
 import "./globals.css";
+import { ScrollAnchorRestorer } from "@/components/landing/ScrollAnchorRestorer";
 import { DEFAULT_LOCALE } from "@/types/content";
 import { parseLocale } from "@/lib/i18n/locale";
 
@@ -22,7 +23,10 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
 
   return (
     <html lang={locale} className={`${sans.variable} h-full antialiased`}>
-      <body className="min-h-full bg-background font-sans text-foreground">{children}</body>
+      <body className="min-h-full bg-background font-sans text-foreground">
+        {children}
+        <ScrollAnchorRestorer />
+      </body>
     </html>
   );
 }

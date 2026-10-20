@@ -27,12 +27,12 @@
       "en": "Advantages"
     },
     "about": {
-      "ru": "О компании",
+      "ru": "О платформе",
       "en": "About"
     },
     "products": {
-      "ru": "Продукты",
-      "en": "Products"
+      "ru": "Модули",
+      "en": "Modules"
     },
     "documentation": {
       "ru": "Документация",
@@ -54,8 +54,8 @@
       "en": "Trading infrastructure"
     },
     "title": {
-      "ru": "Инфраструктура для алгоритмической торговли с минимальной задержкой 2",
-      "en": "Low-latency infrastructure for algorithmic trading 2"
+      "ru": "Инфраструктура для алгоритмической торговли с минимальной задержкой",
+      "en": "Low-latency infrastructure for algorithmic trading"
     },
     "description": {
       "ru": "SigmatNG предназначена для автоматизации операций алгоритмической торговли: приём и обработка рыночных данных в реальном времени, выполнение торговых стратегий, управление заявками и предторговый контроль рисков.",
@@ -209,8 +209,8 @@
   "products": {
     "visible": true,
     "title": {
-      "ru": "Продукты и модули",
-      "en": "Products and modules"
+      "ru": "Программные модули",
+      "en": "Software modules"
     },
     "description": {
       "ru": "Состав поставки и условия внедрения уточняются для конкретной инфраструктуры заказчика. Цена предоставляется по запросу.",
@@ -456,8 +456,8 @@
     "email": "info@example.com",
     "phone": "+7 (000) 000-00-00",
     "workingHours": {
-      "ru": "Часы работы: [указать]",
-      "en": "Working hours: [to be specified]"
+      "ru": "",
+      "en": ""
     },
     "mapUrl": "",
     "telegramUrl": "",

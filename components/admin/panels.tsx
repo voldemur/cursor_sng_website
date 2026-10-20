@@ -55,8 +55,8 @@ export function SitePanel({ content, onChange }: EditorProps) {
       </Card>
       <Card title="Навигация">
         <LocalizedPair label="Преимущества" value={content.navigation.advantages} onChange={(advantages) => onChange({ ...content, navigation: { ...content.navigation, advantages } })} />
-        <LocalizedPair label="О компании" value={content.navigation.about} onChange={(about) => onChange({ ...content, navigation: { ...content.navigation, about } })} />
-        <LocalizedPair label="Продукты" value={content.navigation.products} onChange={(products) => onChange({ ...content, navigation: { ...content.navigation, products } })} />
+        <LocalizedPair label="О платформе" value={content.navigation.about} onChange={(about) => onChange({ ...content, navigation: { ...content.navigation, about } })} />
+        <LocalizedPair label="Модули" value={content.navigation.products} onChange={(products) => onChange({ ...content, navigation: { ...content.navigation, products } })} />
         <LocalizedPair label="Документация" value={content.navigation.documentation} onChange={(documentation) => onChange({ ...content, navigation: { ...content.navigation, documentation } })} />
         <LocalizedPair label="Контакты" value={content.navigation.contacts} onChange={(contacts) => onChange({ ...content, navigation: { ...content.navigation, contacts } })} />
         <LocalizedPair label="Кнопка CTA" value={content.navigation.cta} onChange={(cta) => onChange({ ...content, navigation: { ...content.navigation, cta } })} />

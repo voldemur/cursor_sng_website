@@ -94,7 +94,9 @@ export function SiteFooter({ locale, content }: { locale: Locale; content: SiteC
           <p className="mt-3 max-w-md text-sm leading-6 text-mist">{t(content.footer.tagline, locale)}</p>
         </div>
         <div>
-          <p className="text-xs tracking-widest text-platinum uppercase">Nav</p>
+          <p className="text-xs tracking-widest text-platinum uppercase">
+            {locale === "ru" ? "Навигация" : "Navigation"}
+          </p>
           <div className="mt-3 flex flex-col gap-2 text-sm text-mist">
             {LINKS.map((link) => (
               <a key={link.id} href={`#${link.id}`} className="hover:text-white">

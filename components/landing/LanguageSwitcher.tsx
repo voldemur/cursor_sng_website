@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { rememberScrollPosition } from "@/lib/scroll/anchor";
 import type { Locale } from "@/types/content";
 import { LOCALES } from "@/types/content";
 
@@ -22,7 +23,16 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
             // place. Without this, Next.js scrolls to the top of the page when
             // the viewport sits past the top of the new route's content (which
             // is always the case for the switcher in the footer).
+            // Keeping the pixel offset alone is not enough though: the new locale
+            // has different text heights, so `ScrollAnchorRestorer` re-anchors the
+            // viewport to the same block once the new page is committed.
             scroll={false}
+            onClick={(event) => {
+              if (active) return;
+              // A modifier click opens another tab; this tab is not navigating.
+              if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+              rememberScrollPosition();
+            }}
             hrefLang={item}
             lang={item}
             className={`rounded-full px-2.5 py-1 uppercase tracking-wide transition ${
