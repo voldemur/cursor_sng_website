@@ -391,6 +391,84 @@
         },
         "visible": true,
         "order": 5
+      },
+      {
+        "id": "d4d1b194-fe06-4fcb-abfa-059a1c416992",
+        "title": {
+          "ru": "Графический интерфейс пользователя",
+          "en": "Graphical User Interface"
+        },
+        "description": {
+          "ru": "Интерактивный интерфейс для трейдеров  с визуализацией состояния и результатов работы стратегий, а также возможностью ввода основных команд для управления стратегиями и заявками.",
+          "en": "An interactive interface for traders  that visualizes strategy state and performance and provides core commands for strategy and order management."
+        },
+        "features": [
+          {
+            "ru": "Интерактивная визуализация основной информации",
+            "en": "Interactive visualization of core information"
+          },
+          {
+            "ru": "Панель управления для ввода основных команд",
+            "en": "Control panel for essential commands"
+          },
+          {
+            "ru": " Ролевая модель доступа",
+            "en": "Role‑based access model"
+          },
+          {
+            "ru": "Гибкая настройка дашбордов",
+            "en": "Flexible dashboard configuration"
+          }
+        ],
+        "priceLabel": {
+          "ru": "Цена предоставляется по запросу",
+          "en": "Price available on request"
+        },
+        "ctaLabel": {
+          "ru": "Получить предложение",
+          "en": "Get a proposal"
+        },
+        "visible": true,
+        "order": 6
+      },
+      {
+        "id": "51be94f8-65ad-494c-8749-ad88125a7bfd",
+        "title": {
+          "ru": " Модуль сбора биржевых данных",
+          "en": "Market Data Collection module "
+        },
+        "description": {
+          "ru": "Модуль приёма, обработки и хранения биржевой информации в режиме реального времени. Обеспечивает получение и нормализацию потока сделок и книги заявок (стакана котировок) для последующего использования стратегиями и системами контроля.",
+          "en": "A module for real-time intake, processing, and storage of exchange data. It receives and normalizes trade streams and the order book (quotes depth) for downstream use by strategies and control systems."
+        },
+        "features": [
+          {
+            "ru": "Приём биржевых данных в реальном времени",
+            "en": "Real‑time data ingestion"
+          },
+          {
+            "ru": "Нормализация и унификация форматов",
+            "en": "Normalization and format unification"
+          },
+          {
+            "ru": "Буферизация и гарантированная доставка",
+            "en": "Buffering and guaranteed delivery"
+          },
+          {
+            "ru": "Хранение исторических срезов",
+            "en": "Historical snapshot storage"
+          }
+        ],
+        "priceLabel": {
+          "ru": "Цена предоставляется по запросу",
+          "en": "Price available on request"
+        },
+        "ctaLabel": {
+          "ru": "Получить предложение",
+          "en": "Get a proposal"
+        },
+        "visible": true,
+        "order": 7
       }
     ]
   },
